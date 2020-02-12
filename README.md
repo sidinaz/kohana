@@ -1,4 +1,5 @@
-## Kohana
+# Kohana
+[![pub](https://img.shields.io/pub/v/kohana?color=orange)](https://pub.dev/packages/kohana) [![pub](https://img.shields.io/github/last-commit/sidinaz/kohana)](https://pub.dev/packages/kohana)  
 State management (flutter_hooks based), validators, common models, event bus, responsive layout and more in one codebase.  
 ### State management  
 State management and widget lifecycle events
