@@ -1,6 +1,6 @@
 name: kohana
 description: State management (flutter_hooks based), validators, common models, event bus, responsive layout and more in one codebase.
-version: 1.0.0
+version: 1.0.1
 author: Siddik Nazdrajic <s.nazdrajic@gmail.com>
 homepage: https://github.com/sidinaz/kohana
 environment:
