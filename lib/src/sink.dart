@@ -1,6 +1,5 @@
+import 'package:kohana/src/rx_common.dart';
 import 'package:rxdart/rxdart.dart';
-
-import 'rx_common.dart';
 
 class Sink1<A> {
   final BehaviorSubject<A> _subject1;

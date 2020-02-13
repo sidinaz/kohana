@@ -15,7 +15,7 @@ class CreateComponentHandler<T extends Component>
 }
 
 //helper to speed up container calls
-extension GetCreatedComponent on RoutingContext {
+extension DaggeritoComponentExtensions on RoutingContext {
   T call<T>([String tag]) {
     T object = get(CreateComponentHandler.key).container.resolve<T>(tag);
     assert(object != null, """
@@ -24,6 +24,10 @@ extension GetCreatedComponent on RoutingContext {
         """);
     return object;
   }
+
+  /// assumes that component has already putted into context
+  T getComponent<T extends Component>([String withKey]) =>
+      get(withKey ?? CreateComponentHandler.key);
 }
 
 extension UseComponentAsHandler<T extends Component> on T {

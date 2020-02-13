@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../enums/device_screen_type.dart';
+import 'package:kohana/src/ui/enums/device_screen_type.dart';
 
 class SizingInformation {
   final DeviceScreenType deviceScreenType;

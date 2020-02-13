@@ -1,8 +1,7 @@
+import 'package:kohana/src/event.dart';
+import 'package:kohana/src/event_bus.dart';
+import 'package:kohana/src/view_state.dart';
 import 'package:rxdart/rxdart.dart';
-
-import 'event.dart';
-import 'event_bus.dart';
-import 'view_state.dart';
 
 class BaseModel {
   final BehaviorSubject<ViewState> _activity;

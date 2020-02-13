@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import './sizing_information.dart';
-import '../utils/ui_utils.dart';
+import 'package:kohana/src/ui/responsive/sizing_information.dart';
+import 'package:kohana/src/ui/utils/ui_utils.dart';
 
 class ResponsiveBuilder extends StatelessWidget {
   final Widget Function(

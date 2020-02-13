@@ -1,7 +1,6 @@
+import 'package:kohana/src/model.dart';
+import 'package:kohana/src/view_state.dart';
 import 'package:rxdart/rxdart.dart';
-
-import 'model.dart';
-import 'view_state.dart';
 
 abstract class BaseViewModel<T extends BaseModel> {
   CompositeSubscription disposeBag = CompositeSubscription();

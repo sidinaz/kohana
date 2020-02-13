@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:kohana/src/view_model.dart';
 import 'package:routex/routex.dart';
 import 'package:rxdart/rxdart.dart';
-
-import 'view_model.dart';
 
 // ignore: must_be_immutable
 abstract class BaseView<T extends BaseViewModel> extends HookWidget {
