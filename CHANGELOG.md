@@ -1,3 +1,5 @@
+## 1.0.3
+* onAppComponentCreated
 ## 1.0.2
 * Titanium app
 ## 1.0.1

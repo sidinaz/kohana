@@ -48,7 +48,6 @@ mixin TitaniumApp<T extends Component> on BaseView {
     _isReady.value = false;
     clearViews();
     fields.resetSubComponent();
-    onAppComponentCreated(fields.appComponent);
   }
 
   void bindRouter() => binder.bind();
