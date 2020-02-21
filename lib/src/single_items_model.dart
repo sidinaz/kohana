@@ -21,13 +21,24 @@ class SingleItemsModel<T> extends BaseModel {
   }
 
   void setItems(List<T> items, [int page = 0]) {
-    _currentPages[page] = _Page(items, page);
+    if (page == null) {
+      //append items
+      List<T> _items = [];
+      if (_currentPages.containsKey(0)) {
+        _items = [..._currentPages[0].items];
+      }
+      _items = [..._items, ...items];
+      _currentPages[0] = _Page(_items, 0);
+    } else {
+      //set items
+      _currentPages[page] = _Page(items, page);
+    }
     final list = _currentPages.keys.toList()..sort();
     this._itemsSubject.add(convert(list.map(($) => _currentPages[$]).toList()));
   }
 
-  void appendItems(List<T> items, [int page = 0]) {
-    setItems(items, page);
+  void appendItems(List<T> items) {
+    setItems(items, null);
     setActivity(ViewState.Done);
   }
 

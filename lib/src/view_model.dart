@@ -16,7 +16,7 @@ abstract class BaseViewModel<T extends BaseModel> {
 
   void dispose() => disposeBag.clear();
 
-  get isWaiting => data.isWaiting;
+  Stream<bool> get isWaiting => data.isWaiting;
 
   T call() => data;
 }
