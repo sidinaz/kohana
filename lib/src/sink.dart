@@ -81,3 +81,81 @@ mixin DoubleEventSinkMixin {
 
   get addEvent2 => () => _eventSubject2.add(Signal());
 }
+
+mixin EventSinkMixin3 {
+  final _eventSubject = PublishSubject<Signal>();
+
+  Stream<Signal> get event => _eventSubject;
+
+  get addEvent => () => _eventSubject.add(Signal());
+
+  final _eventSubject2 = PublishSubject<Signal>();
+
+  Stream<Signal> get event2 => _eventSubject2;
+
+  get addEvent2 => () => _eventSubject2.add(Signal());
+
+  final _eventSubject3 = PublishSubject<Signal>();
+
+  Stream<Signal> get event3 => _eventSubject3;
+
+  get addEvent3 => () => _eventSubject3.add(Signal());
+}
+
+mixin EventSinkMixin4 {
+  final _eventSubject = PublishSubject<Signal>();
+
+  Stream<Signal> get event => _eventSubject;
+
+  get addEvent => () => _eventSubject.add(Signal());
+
+  final _eventSubject2 = PublishSubject<Signal>();
+
+  Stream<Signal> get event2 => _eventSubject2;
+
+  get addEvent2 => () => _eventSubject2.add(Signal());
+
+  final _eventSubject3 = PublishSubject<Signal>();
+
+  Stream<Signal> get event3 => _eventSubject3;
+
+  get addEvent3 => () => _eventSubject3.add(Signal());
+
+  final _eventSubject4 = PublishSubject<Signal>();
+
+  Stream<Signal> get event4 => _eventSubject4;
+
+  get addEvent4 => () => _eventSubject4.add(Signal());
+}
+
+mixin EventSinkMixin5 {
+  final _eventSubject = PublishSubject<Signal>();
+
+  Stream<Signal> get event => _eventSubject;
+
+  get addEvent => () => _eventSubject.add(Signal());
+
+  final _eventSubject2 = PublishSubject<Signal>();
+
+  Stream<Signal> get event2 => _eventSubject2;
+
+  get addEvent2 => () => _eventSubject2.add(Signal());
+
+  final _eventSubject3 = PublishSubject<Signal>();
+
+  Stream<Signal> get event3 => _eventSubject3;
+
+  get addEvent3 => () => _eventSubject3.add(Signal());
+
+  final _eventSubject4 = PublishSubject<Signal>();
+
+  Stream<Signal> get event4 => _eventSubject4;
+
+  get addEvent4 => () => _eventSubject4.add(Signal());
+
+  final _eventSubject5 = PublishSubject<Signal>();
+
+  Stream<Signal> get event5 => _eventSubject5;
+
+  get addEvent5 => () => _eventSubject5.add(Signal());
+}

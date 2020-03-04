@@ -32,7 +32,7 @@ class EventBus {
   void push<T>(T event) => _source.add(event);
 }
 
-extension aaaa on Stream {
+extension ListenForAppEventExtension on Stream {
   StreamSubscription listenForAppEvent<T>(_Handler<T> handler,
           [_Predicate<T> predicate]) =>
       (T == dynamic)
