@@ -1,0 +1,21 @@
+builders:
+  managed_builder:
+    import: "package:kohana_generator/builder.dart"
+    builder_factories: ["managedBuilder"]
+    build_extensions: { ".dart": [".managed.json"] }
+    auto_apply: dependents
+    runs_before: ["kohana_generator|managed_config_builder"]
+    build_to: cache
+  managed_config_builder:
+    import: "package:kohana_generator/builder.dart"
+    builder_factories: ["managedConfigBuilder"]
+    build_extensions: { ".dart": [".managed.dart"] }
+    auto_apply: dependents
+    build_to: source
+  serializeGeneratorBuilder:
+    import: 'package:kohana_generator/builder.dart'
+    builder_factories: [ 'serializeGeneratorBuilder' ]
+    auto_apply: dependents
+    build_extensions: { ".dart": [ ".serialize.part" ] }
+    build_to: cache
+    applies_builders: [ "source_gen|combining_builder" ]

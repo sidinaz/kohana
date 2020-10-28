@@ -1,0 +1,1 @@
+#kohana_generator

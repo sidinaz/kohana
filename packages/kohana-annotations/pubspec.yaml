@@ -1,0 +1,7 @@
+name: kohana_annotations
+description: Kohana annotations for code generator.
+version: 0.1.0
+homepage: https://github.com/sidinaz/kohana
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"

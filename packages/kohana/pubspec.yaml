@@ -1,0 +1,26 @@
+name: kohana
+description: State management (flutter_hooks based), validators, common models, event bus, responsive layout and more in one codebase.
+version: 1.0.7+3
+homepage: https://github.com/sidinaz/kohana
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  routex: ^1.0.10
+  kohana_annotations: ^0.1.0
+  daggerito: ^1.0.8
+#  daggerito:
+#    path: /Users/siddik/dart/daggerito
+#  kohana_annotations:
+#    path: ../kohana-annotations
+  rxdart: ^0.23.1
+  flutter_hooks: ^0.8.0
+  equatable: ^1.0.0
+
+
+dev_dependencies:
+  test: ^1.6.0
+  flutter_test:
+    sdk: flutter
